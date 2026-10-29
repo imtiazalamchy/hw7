@@ -1,63 +1,156 @@
-/* All common CSS start */
+/* all common css style start */
 * {
     margin: 0;
     padding: 0;
-}
-
-ul,ol {
-    list-style-type: none;
-    display: flex;
 }
 
 a {
     text-decoration: none;
 }
 
+ul,ol {
+    list-style-type: none;
+}
+
 .container {
-    width: 1320px;
+    width: 1140px;
     margin: 0 auto;
 }
-/* All common CSS end */
+/* all common css style end */
 
 
-#headerpart {
-    padding: 30px 0;
-    background-color: aquamarine;
+/* header start */
+
+#header {
+    padding-top: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logowithmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu ul {
-    justify-content: center;
-    column-gap: 24px;
-}
-
-.menu ul li {
-    position: relative;
+    display: flex;
+    column-gap: 40px;
 }
 
 .menu ul li a {
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    transition: .4s;
-    font-family: "Playwrite IT Trad", cursive;
+    color: #474747;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.menu ul li a:hover {
-color: rgb(251, 3, 3);
+.logo {
+    width: 70%;
+}
+.menu {
+    width: 15%;
+}
+.button {
+    width: 15%;
 }
 
-.effects {
-    color: rgb(0, 0, 0);
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    font-size: 14px;
-    opacity: 0;
-    visibility: hidden;
-    transition: .4s;
+.button a {
+padding: 20px 25px;
+background-color: #FD6E0A;
+border-radius: 5px;
+color: var(--White-Color, #FFF);
+font-family: "Open Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 
-.menu ul li:hover .effects{
-    opacity: 1;
-    visibility: visible;
+.button a:hover {
+background-color: #181818;
+color: var(--White-Color, #ffffff);
 }
+
+/* header end */
+
+/* banner start */
+
+#banner {
+    padding-top: 240px;
+    padding-bottom: 241px;
+    background: url(../img/Frame\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bannertext {
+    margin-bottom: 60px;
+}
+.bannertextone h3 {
+color: #474747;
+font-family: "Open Sans";
+font-size: 45px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.bannertexttwo h1 {
+color: #181818;
+font-family: "Open Sans";
+font-size: 85px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 16px;
+}
+.bannertexthree p {
+color: #757575;
+font-family: "Open Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+}
+
+.buttonmain {
+    display: flex;
+    column-gap: 24px;
+}
+.buttonone a {
+padding: 20px 30px;
+background-color: #FD6E0A;
+border-radius: 5px;
+color: var(--White-Color, #FFF);
+text-align: center;
+font-family: "Open Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+transition: .4s;
+}
+.buttonone a:hover {
+    background-color: #181818;
+}
+.buttontwo a {
+padding: 20px 30px;
+border:2px solid #FD6E0A;
+border-radius: 5px;
+color: #FD6E0A;
+text-align: center;
+font-family: "Open Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+transition: .4s;
+}
+.buttontwo a:hover {
+ border:2px solid #181818;
+color: #181818;
+}
+
+/* banner end */
